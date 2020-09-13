@@ -713,7 +713,7 @@ nav,
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity var(--t-duration) var(--t-t-function);
+  transition: opacity var(--t-duration) var(--t-t-function) 250ms;
 }
 
 .modal-window {
@@ -740,11 +740,13 @@ nav,
   border-radius: 5px;
   background-color: var(--bg-color);
   transform-origin: left center;
-  transition: width var(--t-duration) var(--t-t-function);
+  transform: scaleX(1);
+  transition: transform var(--t-duration) var(--t-t-function);
 }
 
 .is-hidden .slide {
-  width: 0%;;
+  /* width: 0%; */
+  transform: scaleX(0);
   
 }
 
