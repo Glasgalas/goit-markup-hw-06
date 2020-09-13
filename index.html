@@ -410,12 +410,44 @@
 	</footer>
 	
 	<div class="backdrop is-hidden" data-modal>
-		<div class="modal">	
-			<button class="button modal-btn" data-modal-close>
-				<svg class="" width="17" height="17">
-					<use href="./images/sprite.svg#icon-close"></use>
-				</svg>
-			</button>
+		<div class="modal-window">
+			<div class="slide-overlay">
+				<div class="slide"></div>
+				<div class="modal">	
+					<button class="button modal-btn" data-modal-close>
+						<svg class="" width="17" height="17">
+							<use href="./images/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+					
+					<h4>Оставьте свои данные, мы вам перезвоним</h4>
+					<div role="group">
+						<form action="">
+							<label for="name">Имя</label>
+							<input type="text" name="name">
+							
+											<br>
+							<label for="tel">Телефон</label>
+							<input type="tel" name="tel">
+                      <br>
+							<label for="mail">Почта</label>
+							<input type="email" name="mail">
+                      <br>
+							<label for="comment">Комментарий</label>
+							<textarea
+								name="comment"
+								rows="5"
+								cols="45"
+								placeholder="Введите текст"
+							></textarea>
+                      <br>
+							<input type="checkbox" name="agreement">
+							<label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+							
+						</form>
+					</div> 
+				</div>
+		
 		</div>
 	</div>
 
