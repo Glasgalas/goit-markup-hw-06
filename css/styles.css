@@ -214,9 +214,8 @@ nav,
   color: var(--bg-color);
 }
 
-.order-btn {
+.button-blue {
   display: inline-block;
-  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -228,6 +227,10 @@ nav,
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+}
+
+.order-btn{
+  padding: 10px 32px;
 }
 
 .button:focus {
@@ -453,7 +456,7 @@ nav,
 .customers-title {
   margin-top: 0;
   margin-bottom: 50px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -507,6 +510,13 @@ nav,
   align-items: baseline;
 }
 
+.section-footer {
+  width: calc((100% - 30px) / 2);
+  margin-right: 30px;
+  display: flex;
+  align-items: baseline;
+}
+
 .address {
   margin-right: 70px;
 }
@@ -528,8 +538,8 @@ nav,
   margin-bottom: 9px;
 }
 
-.subscribe b {
-  font-weight: bold;
+.join b {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -537,24 +547,63 @@ nav,
   color: var(--bg-color);
 }
 
-.subscribe-list {
+.join-list {
   display: flex;
   margin-top: 20px;
 }
 
-.subscribe-item:not(:last-child) {
+.join-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.subscribe-list li {
+.join-list li {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.subscribe-icon {
+.join-icon {
   width: 20px;
   height: 20px;
   fill: var(--bg-color);
+}
+
+.subscire {
+  width: calc((100% - 30px) / 2);
+  margin-right: 0;
+}
+
+.subscribe-title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bg-color);
+  margin-bottom: 20px;
+}
+
+.subscribe-flexbox {
+  display: flex;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.sudscribe-btn {
+  display: inline-flex;
+  padding: 10px 28px 10px 29px;
+}
+
+.subscribe-icon {
+  margin-left: 10px;
 }
 
 /* Портфолио */
@@ -745,9 +794,7 @@ nav,
 }
 
 .is-hidden .slide {
-  /* width: 0%; */
   transform: scaleX(0);
-  
 }
 
 .is-hidden .modal {
@@ -775,13 +822,13 @@ nav,
 
 .modal-btn {
   position: absolute;
-  top: 8px;
+  top: 8px; 
   right: 8px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
+ 
   width: 30px;
   height: 30px;
 
@@ -789,4 +836,98 @@ nav,
   border-radius: 50%;
 
   background-color: var(--bg-color);
+}
+
+.modal-btn:hover {
+  fill: var(--accent-color);
+}
+
+/* Форма */
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field:not(:nth-of-type(4)) {
+  margin-bottom: 10px;
+}
+
+.form-title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+}
+
+.form-label {
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--main-color);
+}
+
+.form-input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+
+
+.comment-form {
+  margin-bottom: 20px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.comment-form:placeholder-shown {
+  color: #2196f3;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  /* transform: translate(-50%, -50%); */
+}
+
+.form-checkbox {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.agreement-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  
+  color: var(--main-color);
+}
+
+.link-agreement {
+  color: var(--accent-color);
+}
+
+
+.button-submit {
+  padding: 10px 55px;
 }
