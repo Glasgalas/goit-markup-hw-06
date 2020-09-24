@@ -538,18 +538,8 @@ nav,
   margin-bottom: 9px;
 }
 
-.join b {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--bg-color);
-}
-
 .join-list {
   display: flex;
-  margin-top: 20px;
 }
 
 .join-item:not(:last-child) {
@@ -700,8 +690,8 @@ nav,
   transition: transform var(--t-duration) var(--t-t-function);
 }
 
-.project:hover .overlay,
-.project:focus .overlay {
+.project-link:hover .overlay,
+.project-link:focus .overlay {
   transform: translateY(0%);
 }
 
@@ -726,7 +716,7 @@ nav,
   overflow: hidden;
 }
 
-.project a {
+.project-link {
   text-decoration: none;
 }
 
@@ -920,6 +910,10 @@ nav,
 }
 
 .comment-form::placeholder-shown {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
   color: rgba(141, 19, 19, 0.5);
 }
 
